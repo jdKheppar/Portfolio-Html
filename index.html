@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #ebfeff;
+        font-family: sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 10vh;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
+      nav ul li a:hover {
+        text-decoration: none;
+        color: rgb(153, 153, 226);
+        cursor: pointer;
+        font-size: 1.02rem;
+      }
+      .left {
+        font-size: 1.5rem;
+        color: white;
+      }
+      .mainContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+      }
+
+      .leftSection {
+        width: 30vw;
+      }
+      .intro {
+        font-size: 2.5rem;
+      }
+      .rightSection {
+        width: 30vw;
+      }
+      #main-img {
+        border-radius: 40%;
+        width: 80%;
+      }
+      .purple {
+        color: rgb(170, 107, 228);
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      #cv-btn {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        background-color: rgb(18, 18, 62);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Junaid's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">Skill</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="mainContainer">
+        <div class="leftSection">
+          <div class="intro">
+            Hi! My Name is <span class="purple">Muhammad Junaid</span>
+            <div>and, I am a passionate</div>
+            <span class="purple">Web Developer</span>
+            <div><button id="cv-btn">Download CV</button></div>
+          </div>
+        </div>
+
+        <div class="rightSection">
+          <img
+            id="main-img"
+            src="./assets/juni8-removebg-preview.png"
+            alt="Personal Photo"
+          />
+        </div>
+      </div>
+    </main>
+    <script>
+      var downloadButton = document.getElementById("cv-btn");
+
+      downloadButton.addEventListener("click", function () {
+        var fileUrl = "./assets/JunaidCV.pdf"; // Update with the actual path to your CV file
+
+        var link = document.createElement("a");
+        link.href = fileUrl;
+        link.download = "juni_CV.pdf"; // Update with the desired file name
+
+        link.click();
+      });
+    </script>
+  </body>
+</html>

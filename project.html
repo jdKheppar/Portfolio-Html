@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My projects</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #ebfeff;
+        font-family: sans-serif;
+      }
+      .projectContainer {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #projects-line {
+        text-decoration: underline;
+        margin-bottom: 40px;
+      }
+
+      .projects {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .specific-project-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 50vh;
+        width: 50vh;
+        margin: 15px;
+        background-color: white;
+        border: 1px solid rgb(18, 18, 62);
+        border-radius: 3%;
+      }
+      .logo-img {
+        height: 70%;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid rgb(18, 18, 62);
+        border-top: 0;
+        padding-top: 0;
+        margin-top: 0;
+        cursor: pointer;
+      }
+      .project-desc {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 14px;
+        font-family: Sora;
+        font-weight: 400;
+      }
+      .github {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="projectContainer">
+      <h2 id="projects-line">Projects</h2>
+      <h1>What I have made?</h1>
+
+      <div class="projects">
+        <div class="row">
+          <div class="meme specific-project-con">
+            <a
+              href="https://github.com/jdKheppar/React/tree/main/Scrimba/Memes%20Generator"
+              target="_blank"
+              ><img
+                class="logo-img"
+                src="./assets/websites/meme.jpg"
+                alt="logo image"
+              />
+            </a>
+
+            <h3>Meme Generator React</h3>
+            <p class="project-desc">Created using html,css and reactjs</p>
+            <div class="github">Github</div>
+          </div>
+          <div class="Van specific-project-con">
+            <a href="http://" target="_blank">
+              <img
+                class="logo-img"
+                src="./assets/websites/van1.png"
+                alt="logo image"
+            /></a>
+
+            <h3>Vans Scrimba React</h3>
+            <p class="project-desc">Created using html,css and reactjs</p>
+            <div class="github">Github</div>
+          </div>
+          <div class="portfolio specific-project-con">
+            <a href="http://" target="_blank">
+              <img
+                class="logo-img"
+                src="./assets/websites/portfolio1.png"
+                alt="logo image"
+            /></a>
+
+            <h3>Portfolio React</h3>
+            <p class="project-desc">Created using html,css and reactjs</p>
+            <div class="github">Github</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="birthday specific-project-con">
+            <a href="http://" target="_blank">
+              <img
+                class="logo-img"
+                src="./assets/websites/birthday.png"
+                alt="logo image"
+            /></a>
+
+            <h3>Birthday App React</h3>
+            <p class="project-desc">Created using html,css and reactjs</p>
+            <div class="github">Github</div>
+          </div>
+          <div class="airbnb specific-project-con">
+            <a href="http://" target="_blank">
+              <img
+                class="logo-img"
+                src="./assets/websites/airbnb.png"
+                alt="logo image"
+            /></a>
+
+            <h3>Airbnb React</h3>
+            <p class="project-desc">Created using html,css and reactjs</p>
+            <div class="github">Github</div>
+          </div>
+          <div class="food specific-project-con">
+            <a href="http://" target="_blank">
+              <img
+                class="logo-img"
+                src="./assets/websites/food.png"
+                alt="logo image"
+            /></a>
+
+            <h3>Food App Html</h3>
+            <p class="project-desc">Created using html,css and reactjs</p>
+            <div class="github">Github</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

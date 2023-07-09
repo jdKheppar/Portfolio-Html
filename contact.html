@@ -57,9 +57,8 @@
       }
       .contactIcons {
         display: flex;
-        align-items: center;
+        align-items: left;
         width: 40vw;
-        justify-content: space-around;
       }
       .contact-logo-img {
         margin: 10px;
@@ -80,6 +79,16 @@
       #get-in-touch {
         margin: 20px 0;
       }
+      footer {
+        color: #aaaaaa;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
     </style>
   </head>
   <body>
@@ -87,7 +96,7 @@
       <h1 id="contact-me-h1">Contact me</h1>
       <p class="contact-intro-desc">I WILL BE GLAD TO ANSWER YOUR QUESTIONS</p>
       <div class="formContainer">
-        <form>
+        <form netlify>
           <div class="form-group">
             <input type="text" name="name" placeholder="Name" />
           </div>
@@ -147,7 +156,9 @@
           />
         </div>
       </div>
-      <p>Copyright © 2023. Develop & Designed by Muhammad Junaid</p>
+      <footer>
+        <p>Copyright © 2023. Develop & Designed by Muhammad Junaid</p>
+      </footer>
     </div>
   </body>
 </html>
